@@ -1,0 +1,45 @@
+set nocompatible "be iMproved, required
+" Set the runtim path to inclue Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+" call vundle#begin('~/some/path/here')
+
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'Yggdroot/indentLine'
+Plugin 'vim-vdebug/vdebug'
+Plugin 'joonty/vim-phpqa'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
+Plugin 'tpope/vim-surround'
+Plugin 'codealfa/vim-colors-solarized'
+
+call vundle#end()  "required
+filetype plugin indent on "required
+
+syntax on
+set number
+set ruler
+set path+=**
+set incsearch
+set wildmenu
+
+let g:snipMate = { 'snippet_version' : 1 }
+
+" Don't run messdetector on save (default = 1)
+let g:phpqa_messdetector_autorun = 0
+
+" Don't run codesniffer on save (default = 1)
+let g:phpqa_codesniffer_autorun =0
+
+colorscheme solarized
+
+set tags=/home/jchoptim/www/tags
+ 
+set laststatus=2
+set statusline=%<%f\ b%n\ n%L\ %h%m%r%=%-14.(%l,%c%)\ %P
