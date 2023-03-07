@@ -544,7 +544,7 @@ exe "hi! Constant"       .s:fmt_none   .s:fg_red   .s:bg_none
 "       *Constant        any constant
 "        String          a string constant: "this is a string"
 "        Character       a character constant: 'c', '\n'
-exe "hi! Number"             .s:fmt:none   .s:fg_green  .s:bg_none
+exe "hi! Number"             .s:fmt_none   .s:fg_green  .s:bg_none
 "        Number          a number constant: 234, 0xff
 exe "hi! Float"              .s:fmt_none  .s:fg_green  .s:bg_none
 "        Float           a floating point constant: 2.3e10
@@ -555,7 +555,7 @@ exe "hi! Identifier"     .s:fmt_none   .s:fg_blue   .s:bg_none
 exe "hi! Function"       .s:fmt_none    .s:fg_magenta  .s:bg_none
 "        Function        function name (also: methods for classes)
 "
-exe "hi! Statement"      .s:fmt_none   .s:fg_base0  .s:bg_none
+exe "hi! Statement"      .s:fmt_bold   .s:fg_base0  .s:bg_none
 "       *Statement       any statement
 "        Conditional     if, then, else, endif, switch, etc.
 "        Repeat          for, do, while, etc.
@@ -577,7 +577,7 @@ exe "hi! Type"           .s:fmt_none   .s:fg_yellow .s:bg_none
 "        Structure       struct, union, enum, etc.
 "        Typedef         A typedef
 
-exe "hi! Special"        .s:fmt_none   .s:fg_red    .s:bg_none
+exe "hi! Special"        .s:fmt_none   .s:fg_base0    .s:bg_none
 "       *Special         any special symbol
 "        SpecialChar     special character in a constant
 "        Tag             you can use CTRL-] on this
@@ -778,18 +778,33 @@ exe "hi! perlStatementFileDesc". s:fg_cyan.s:bg_back.s:fmt_none
 " php highlighting "{{{
 " ---------------------------------------------------------------------
 exe "hi! phpIdentifier"  .s:fmt_none .s:fg_blue   .s:bg_none
-hi! link phpVarSelector phpIndentifier
-hi! link phpMethodsVar phpIndentifier
-hi! link phpIntVar phpIdentifier
-exe "hi! phpFunctions"   .s:fmt_none .s:fg_cyan   .s:bg_none
-hi! link phpSpecialFunction phpFunctions
-hi! link phpInclude phpFunctions
+exe "hi! phpVarSelector"  .s:fmt_none .s:fg_blue   .s:bg_none
+exe "hi! phpMethodsVar"   .s:fmt_none .s:fg_blue   .s:bg_none
+exe "hi! phpIntVar"       .s:fmt_none .s:fg_blue   .s:bg_none
+exe "hi! phpMemberSelector" .s:fmt_none .s:fg_blue  .s:bg_none
+exe "hi! phpFunctions"     .s:fmt_none .s:fg_magenta   .s:bg_none
+exe "hi! phpSpecialFunction"   .s:fmt_none .s:fg_magenta   .s:bg_none
+exe "hi! phpMethods"     .s:fmt_none   .s:fg_magenta  .s:bg_none
+exe "hi! phpInclude"     .s:fmt_bold .s:fg_base0   .s:bg_none
 exe "hi! phpDocTags"      .s:fmt_bold  .s:fg_base0 .s:bg_none
-exe "hi! phpStructure"    .s:fmt_bldi .s:fg_base0  .s:bg_none
+exe "hi! phpDefine"       .s:fmt_bold  .s:fg_base0   .s:bg_none
+exe "hi! phpBoolean"      .s:fmt_bold  .s:fg_base0   .s:bg_none
+exe "hi! phpException"    .s:fmt_bold  .s:fg_base0   .s:bg_none
+exe "hi! phpStructure"    .s:fmt_bold  .s:fg_base0  .s:bg_none
+exe "hi! phpSCKeyword"    .s:fmt_bold  .s:fg_base0   .s:bg_none
+exe "hi! phpStorageClass" .s:fmt_bold  .s:fg_base0   .s:bg_none
+exe "hi! phpFoldFunction" .s:fmt_none  .s:fg_base0   .s:bg_none
+
+exe "hi! phpBackslashSequences" .s:fmt_bold  .s:fg_red  .s:bg_none
+
+exe "hi! phpCoreConstant" .s:fmt_ital  .s:fg_base0  .s:bg_none
+exe "hi! phpClasses"      .s:fmt_none  .s:fg_cyan   .s:bg_none
+exe "hi! phpInterfaces"   .s:fmt_none  .s:fg_cyan   .s:bg_none
 exe "hi! DbgBreakptLine"  .s:fmt_none .s:fg_base3   .s:bg_red
 exe "hi! DbgBreakptSign"  .s:fmt_none .s:fg_base3   .s:bg_red
 exe "hi! DbgCurrentLine"  .s:fmt_none .s:fg_base3   .s:bg_blue
 exe "hi! DbgCurrentSign"  .s:fmt_none .s:fg_base3   .s:bg_blue
+exe "hi! phpRegion"       .s:fmt_none  .s:fg_cyan   .s:bg_none
 "}}}
 " tex highlighting "{{{
 " ---------------------------------------------------------------------
