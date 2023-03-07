@@ -544,7 +544,7 @@ exe "hi! Constant"       .s:fmt_none   .s:fg_red   .s:bg_none
 "       *Constant        any constant
 "        String          a string constant: "this is a string"
 "        Character       a character constant: 'c', '\n'
-exe "hi! Number"             .s:fmt:none   .s:fg_green  .s:bg_none
+exe "hi! Number"             .s:fmt_none   .s:fg_green  .s:bg_none
 "        Number          a number constant: 234, 0xff
 exe "hi! Float"              .s:fmt_none  .s:fg_green  .s:bg_none
 "        Float           a floating point constant: 2.3e10
