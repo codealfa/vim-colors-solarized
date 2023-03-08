@@ -555,7 +555,7 @@ exe "hi! Identifier"     .s:fmt_none   .s:fg_blue   .s:bg_none
 exe "hi! Function"       .s:fmt_none    .s:fg_magenta  .s:bg_none
 "        Function        function name (also: methods for classes)
 "
-exe "hi! Statement"      .s:fmt_bold   .s:fg_base0  .s:bg_none
+exe "hi! Statement"      .s:fmt_bold   .s:fg_violet  .s:bg_none
 "       *Statement       any statement
 "        Conditional     if, then, else, endif, switch, etc.
 "        Repeat          for, do, while, etc.
@@ -674,7 +674,7 @@ exe "hi! CursorLine"     .s:fmt_uopt   .s:fg_none   .s:bg_base02  .s:sp_base1
 exe "hi! ColorColumn"    .s:fmt_none   .s:fg_none   .s:bg_base02
 exe "hi! Cursor"         .s:fmt_none   .s:fg_base03 .s:bg_base0
 hi! link lCursor Cursor
-exe "hi! MatchParen"     .s:fmt_bold   .s:fg_red    .s:bg_base01
+exe "hi! MatchParen"     .s:fmt_none   .s:fg_base03    .s:bg_yellow
 
 "}}}
 " vim syntax highlighting "{{{
@@ -777,6 +777,7 @@ exe "hi! perlStatementFileDesc". s:fg_cyan.s:bg_back.s:fmt_none
 "}}}
 " php highlighting "{{{
 " ---------------------------------------------------------------------
+
 exe "hi! phpIdentifier"  .s:fmt_none .s:fg_blue   .s:bg_none
 exe "hi! phpVarSelector"  .s:fmt_none .s:fg_blue   .s:bg_none
 exe "hi! phpMethodsVar"   .s:fmt_none .s:fg_blue   .s:bg_none
@@ -785,18 +786,16 @@ exe "hi! phpMemberSelector" .s:fmt_none .s:fg_blue  .s:bg_none
 exe "hi! phpFunctions"     .s:fmt_none .s:fg_magenta   .s:bg_none
 exe "hi! phpSpecialFunction"   .s:fmt_none .s:fg_magenta   .s:bg_none
 exe "hi! phpMethods"     .s:fmt_none   .s:fg_magenta  .s:bg_none
-exe "hi! phpInclude"     .s:fmt_bold .s:fg_base0   .s:bg_none
+exe "hi! phpInclude"     .s:fmt_bold .s:fg_violet   .s:bg_none
 exe "hi! phpDocTags"      .s:fmt_bold  .s:fg_base0 .s:bg_none
-exe "hi! phpDefine"       .s:fmt_bold  .s:fg_base0   .s:bg_none
-exe "hi! phpBoolean"      .s:fmt_bold  .s:fg_base0   .s:bg_none
-exe "hi! phpException"    .s:fmt_bold  .s:fg_base0   .s:bg_none
-exe "hi! phpStructure"    .s:fmt_bold  .s:fg_base0  .s:bg_none
-exe "hi! phpSCKeyword"    .s:fmt_bold  .s:fg_base0   .s:bg_none
-exe "hi! phpStorageClass" .s:fmt_bold  .s:fg_base0   .s:bg_none
-exe "hi! phpFoldFunction" .s:fmt_none  .s:fg_base0   .s:bg_none
-
+exe "hi! phpDefine"       .s:fmt_bold  .s:fg_violet   .s:bg_none
+exe "hi! phpBoolean"      .s:fmt_bold  .s:fg_violet   .s:bg_none
+exe "hi! phpException"    .s:fmt_bold  .s:fg_violet   .s:bg_none
+exe "hi! phpStructure"    .s:fmt_bold  .s:fg_violet  .s:bg_none
+exe "hi! phpSCKeyword"    .s:fmt_bold  .s:fg_violet   .s:bg_none
+exe "hi! phpStorageClass" .s:fmt_bold  .s:fg_violet   .s:bg_none
+exe "hi! phpFoldFunction" .s:fmt_none  .s:fg_violet   .s:bg_none
 exe "hi! phpBackslashSequences" .s:fmt_bold  .s:fg_red  .s:bg_none
-
 exe "hi! phpCoreConstant" .s:fmt_ital  .s:fg_base0  .s:bg_none
 exe "hi! phpClasses"      .s:fmt_none  .s:fg_cyan   .s:bg_none
 exe "hi! phpInterfaces"   .s:fmt_none  .s:fg_cyan   .s:bg_none
