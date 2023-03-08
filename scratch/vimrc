@@ -43,3 +43,6 @@ set tags=/home/jchoptim/www/tags
  
 set laststatus=2
 set statusline=%<%f\ b%n\ n%L\ %h%m%r%=%-14.(%l,%c%)\ %P
+
+" Save file as sudo user (:Sw)
+command! -nargs=0 Sw w !sudo tee % > /dev/null
