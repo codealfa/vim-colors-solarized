@@ -39,10 +39,10 @@ let g:phpqa_codesniffer_autorun =0
 
 colorscheme solarized
 
-set tags=/home/jchoptim/www/tags
- 
 set laststatus=2
 set statusline=%<%f\ b%n\ n%L\ %h%m%r%=%-14.(%l,%c%)\ %P
 
+" Uncomment and edit these as needed
+"set tags=/home/jchoptim/www/tags
 " Save file as sudo user (:Sw)
-command! -nargs=0 Sw w !sudo tee % > /dev/null
+"command! -nargs=0 Sw w !sudo tee % > /dev/null
