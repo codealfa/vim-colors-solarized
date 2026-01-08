@@ -283,8 +283,8 @@ elseif (has("gui_running") && g:solarized_degrade == 1)
 elseif g:solarized_termcolors != 256 && &t_Co >= 16
     let s:vmode       = "cterm"
     let s:base03      = "0"
-    let s:base02      = "8"
-    let s:base01      = "10"
+    let s:base02      = "10"
+    let s:base01      = "8"
     let s:base00      = "11"
     let s:base0       = "12"
     let s:base1       = "14"
@@ -336,8 +336,8 @@ else
 "   let s:cyan        = "6"
 "   let s:green       = "2"
     let s:base03      = "Black"      " 0*
-    let s:base02      = "DarkGrey"         " 0
-    let s:base01      = "LightGreen"    " 2*
+    let s:base02      = "LightGreen"         " 10
+    let s:base01      = "DarkGrey"    " 8*
     let s:base00      = "LightYellow"   " 3*
     let s:base0       = "LightBlue"     " 4*
     let s:base1       = "LightCyan"     " 6*
