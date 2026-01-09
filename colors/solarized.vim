@@ -257,8 +257,8 @@ if (has("gui_running") && g:solarized_degrade == 0)
     let s:violet      = "#6c71c4"
     let s:blue        = "#268bd2"
     let s:cyan        = "#2aa198"
-    "let s:green       = "#859900" "original
-    let s:green       = "#719e07" "experimental
+    let s:green       = "#859900" "original
+    "let s:green       = "#719e07" "experimental
 elseif (has("gui_running") && g:solarized_degrade == 1)
     " These colors are identical to the 256 color mode. They may be viewed
     " while in gui mode via "let g:solarized_degrade=1", though this is not
@@ -302,15 +302,15 @@ elseif g:solarized_termcolors == 256
     let s:vmode       = "cterm"
     let s:base03      = "234"
     let s:base02      = "235"
-    let s:base01      = "239"
-    let s:base00      = "240"
+    let s:base01      = "240"
+    let s:base00      = "241"
     let s:base0       = "244"
     let s:base1       = "245"
-    let s:base2       = "187"
+    let s:base2       = "254"
     let s:base3       = "230"
     let s:yellow      = "136"
     let s:orange      = "166"
-    let s:red         = "124"
+    let s:red         = "160"
     let s:magenta     = "125"
     let s:violet      = "61"
     let s:blue        = "33"
