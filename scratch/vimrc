@@ -37,6 +37,10 @@ let g:phpqa_messdetector_autorun = 0
 " Don't run codesniffer on save (default = 1)
 let g:phpqa_codesniffer_autorun =0
 
+" Use the light Solarized background in gvim; terminal vim keeps its default
+if has("gui_running")
+    set background=light
+endif
 colorscheme solarized
 
 set laststatus=2
